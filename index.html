@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do aplicativo Agenda Salário: Plantão e DEAC.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#123f70">
+  <title>Política de Privacidade | Agenda Salário: Plantão e DEAC</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy-950: #071a2d;
+      --navy-900: #0b2a4a;
+      --navy-800: #123f70;
+      --blue-600: #1676d2;
+      --blue-100: #dceeff;
+      --blue-050: #f2f8ff;
+      --orange-600: #dc5b1a;
+      --orange-100: #ffeadf;
+      --ink: #172b40;
+      --muted: #5f7082;
+      --line: #dce4ec;
+      --surface: #ffffff;
+      --canvas: #f3f6f9;
+      --shadow: 0 18px 48px rgba(7, 26, 45, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--blue-600);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover { color: var(--navy-800); }
+    a:focus-visible {
+      outline: 3px solid var(--orange-600);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .hero {
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 85% 10%, rgba(22, 118, 210, 0.42), transparent 30rem),
+        linear-gradient(135deg, var(--navy-950), var(--navy-800));
+      border-bottom: 4px solid var(--blue-600);
+    }
+
+    .hero__inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 58px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: #b9dbff;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      letter-spacing: -0.035em;
+    }
+
+    .hero__summary {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: #e4f1ff;
+      font-size: 1.08rem;
+    }
+
+    .hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin: 28px 0 0;
+      color: #c8ddf2;
+      font-size: 0.94rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(220px, 270px) minmax(0, 760px);
+      gap: 42px;
+      width: min(1120px, calc(100% - 40px));
+      margin: 42px auto 72px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 22px;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--navy-900);
+      font-size: 0.86rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc li + li { margin-top: 5px; }
+    .toc a {
+      display: block;
+      padding: 7px 9px;
+      color: var(--muted);
+      border-radius: 8px;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+    .toc a:hover { color: var(--navy-800); background: var(--blue-050); }
+
+    article {
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .article__inner { padding: clamp(24px, 5vw, 52px); }
+
+    section { scroll-margin-top: 24px; }
+    section + section {
+      margin-top: 38px;
+      padding-top: 38px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--navy-900);
+      font-size: clamp(1.35rem, 3vw, 1.65rem);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      color: var(--navy-900);
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 14px; }
+    ul { margin: 14px 0 0; padding-left: 1.3rem; }
+    li { padding-left: 0.25rem; }
+    li + li { margin-top: 8px; }
+
+    .notice {
+      margin: 0 0 34px;
+      padding: 20px 22px;
+      background: var(--blue-050);
+      border: 1px solid #b9d8f6;
+      border-left: 5px solid var(--blue-600);
+      border-radius: 14px;
+    }
+
+    .notice strong { color: var(--navy-900); }
+
+    .warning {
+      margin-top: 22px;
+      padding: 20px 22px;
+      background: var(--orange-100);
+      border: 1px solid #f2b695;
+      border-radius: 14px;
+      color: #63280c;
+      font-weight: 750;
+    }
+
+    .contact {
+      padding: 22px;
+      background: var(--navy-900);
+      color: #ffffff;
+      border-radius: 16px;
+    }
+
+    .contact p:last-child { margin-bottom: 0; }
+    .contact a { color: #bfe0ff; }
+
+    footer {
+      width: min(1120px, calc(100% - 40px));
+      margin: -38px auto 38px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    code {
+      padding: 0.12em 0.35em;
+      background: #edf2f7;
+      border-radius: 5px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 820px) {
+      .hero__inner { padding: 44px 0 40px; }
+      .layout { display: block; margin-top: 24px; }
+      .toc { position: static; margin-bottom: 20px; }
+      .toc ol { columns: 2; column-gap: 18px; }
+      .toc li { break-inside: avoid; }
+    }
+
+    @media (max-width: 520px) {
+      .hero__inner, .layout, footer { width: min(100% - 24px, 1120px); }
+      .hero__inner { padding: 34px 2px 32px; }
+      .hero__meta { display: block; }
+      .hero__meta span { display: block; margin-top: 5px; }
+      .layout { margin-bottom: 48px; }
+      .toc { padding: 16px; border-radius: 14px; }
+      .toc ol { columns: 1; }
+      article { border-radius: 16px; }
+      .article__inner { padding: 24px 20px; }
+      section + section { margin-top: 30px; padding-top: 30px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #ffffff; color: #000000; font-size: 11pt; }
+      .hero { background: #ffffff; color: #000000; border-bottom: 2px solid #000000; }
+      .hero__inner { width: 100%; padding: 0 0 24px; }
+      .hero__summary, .hero__meta, .eyebrow { color: #000000; }
+      .layout { display: block; width: 100%; margin: 0; }
+      .toc { display: none; }
+      article { border: 0; box-shadow: none; }
+      .article__inner { padding: 0; }
+      footer { width: 100%; margin: 30px 0 0; }
+      a { color: #000000; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Documento público</p>
+      <h1>Política de Privacidade</h1>
+      <p class="hero__summary">
+        Como o aplicativo Agenda Salário: Plantão e DEAC trata informações,
+        registros pessoais, fotos, vídeos e notificações no aparelho do usuário.
+      </p>
+      <p class="hero__meta">
+        <span><strong>Última atualização:</strong> 7 de setembro de 2026</span>
+        <span><strong>Pacote:</strong> com.calendariodeac.app</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="toc" aria-label="Conteúdo da política">
+      <strong>Nesta política</strong>
+      <ol>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#dados-locais">Dados no aparelho</a></li>
+        <li><a href="#midias">Fotos e vídeos</a></li>
+        <li><a href="#notificacoes">Notificações</a></li>
+        <li><a href="#permissoes">Permissões</a></li>
+        <li><a href="#backup">Backup e links</a></li>
+        <li><a href="#exclusao">Retenção e exclusão</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#independencia">Independência</a></li>
+        <li><a href="#publico">Público-alvo</a></li>
+        <li><a href="#alteracoes">Alterações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <div class="article__inner">
+        <div class="notice">
+          <strong>Privacidade por padrão.</strong> Na versão atual, os dados do aplicativo
+          são processados localmente. O desenvolvedor não recebe os registros cadastrados
+          pelo usuário e o aplicativo não possui conta, servidor próprio, anúncios ou ferramentas de análise.
+        </div>
+
+        <section id="resumo">
+          <h2>1. Resumo</h2>
+          <p>
+            Esta política descreve o tratamento de informações pelo aplicativo
+            <strong>Agenda Salário: Plantão e DEAC</strong>, identificado pelo pacote
+            <code>com.calendariodeac.app</code>. O aplicativo auxilia na organização de
+            escalas, plantões, DEACs, registros pessoais e estimativas financeiras.
+          </p>
+          <p>
+            O aplicativo não exige cadastro ou login. Na versão abrangida por esta política,
+            não transmite ao desenvolvedor as informações inseridas pelo usuário, não utiliza
+            publicidade e não incorpora ferramentas de analytics ou rastreamento.
+          </p>
+        </section>
+
+        <section id="dados-locais">
+          <h2>2. Informações armazenadas no aparelho</h2>
+          <p>De acordo com as funções utilizadas, o aplicativo pode armazenar localmente:</p>
+          <ul>
+            <li>perfil financeiro, benefícios, gratificações, previdência e descontos informados;</li>
+            <li>escala 12×36, plantões, DEACs, confirmações e períodos da folha;</li>
+            <li>anotações, fotos, vídeos e metadados associados aos registros pessoais;</li>
+            <li>preferências de notificação e progresso da apresentação inicial;</li>
+            <li>configurações necessárias para o funcionamento das estimativas e lembretes.</li>
+          </ul>
+          <p>
+            Essas informações são utilizadas exclusivamente para fornecer as funcionalidades
+            solicitadas no próprio dispositivo. O processamento exclusivamente local não representa
+            coleta de dados pelo desenvolvedor.
+          </p>
+        </section>
+
+        <section id="midias">
+          <h2>3. Fotos e vídeos</h2>
+          <ul>
+            <li>Mídias capturadas para um registro pessoal são armazenadas no espaço controlado pelo aplicativo.</li>
+            <li>Fotos e vídeos feitos a partir do aplicativo também podem receber uma cópia na galeria do sistema, em pastas identificadas com o nome do aplicativo.</li>
+            <li>Uma mídia escolhida de uma galeria existente não precisa ser republicada como uma segunda cópia.</li>
+            <li>Se a disponibilização automática na galeria falhar, o aplicativo pode oferecer uma ação para tentar novamente.</li>
+            <li>Pastas de versões anteriores podem ser reconhecidas para preservar compatibilidade.</li>
+          </ul>
+          <p>
+            A exclusão somente dentro do aplicativo remove os arquivos e vínculos controlados por ele.
+            Cópias existentes na galeria permanecem no celular, salvo quando o usuário seleciona
+            expressamente a opção de removê-las também e confirma a solicitação apresentada pelo sistema.
+          </p>
+        </section>
+
+        <section id="notificacoes">
+          <h2>4. Notificações e lembretes</h2>
+          <p>
+            O aplicativo pode criar notificações locais para avisar sobre serviços próximos e solicitar
+            confirmação após o horário previsto de término. Os lembretes são calculados e agendados no aparelho.
+          </p>
+          <p>
+            Quando autorizado pelo sistema, o aplicativo pode utilizar alarmes exatos. Caso essa autorização
+            não esteja disponível, poderá utilizar um agendamento aproximado. Após a reinicialização do aparelho,
+            o aplicativo pode restaurar os lembretes previamente configurados.
+          </p>
+        </section>
+
+        <section id="permissoes">
+          <h2>5. Permissões e recursos do sistema</h2>
+          <ul>
+            <li><strong>Notificações:</strong> utilizadas para exibir lembretes escolhidos pelo usuário.</li>
+            <li><strong>Alarmes:</strong> utilizados para programar avisos nos horários relacionados aos serviços.</li>
+            <li><strong>Inicialização do aparelho:</strong> utilizada para restaurar notificações locais após uma reinicialização.</li>
+            <li><strong>Câmera do sistema:</strong> pode ser aberta por ação do usuário para registrar foto ou vídeo.</li>
+            <li><strong>Armazenamento de mídia:</strong> utilizado para disponibilizar cópias de fotos e vídeos na galeria, respeitando as regras da versão do Android.</li>
+          </ul>
+          <p>O aplicativo não solicita acesso irrestrito a todos os arquivos do usuário.</p>
+        </section>
+
+        <section id="backup">
+          <h2>6. Backup exportável e links externos</h2>
+          <h3>Backup escolhido pelo usuário</h3>
+          <p>
+            O usuário pode exportar um arquivo ZIP com registros pessoais para um destino selecionado
+            por meio do seletor do Android. O aplicativo não envia esse arquivo automaticamente.
+            Se o usuário escolher um serviço de nuvem ou outro aplicativo como destino, o tratamento
+            posterior do arquivo estará sujeito às regras desse serviço.
+          </p>
+          <h3>Links externos</h3>
+          <p>
+            O aplicativo pode solicitar ao navegador que abra o sistema DEAC Web e outras fontes oficiais.
+            A navegação ocorre fora do aplicativo e fica sujeita à conexão, aos termos e às políticas do site acessado.
+          </p>
+        </section>
+
+        <section id="exclusao">
+          <h2>7. Retenção e exclusão</h2>
+          <p>
+            Os dados permanecem no aparelho enquanto o usuário mantiver os registros ou o aplicativo instalado.
+            Registros podem ser excluídos individualmente, e as configurações oferecem uma opção para apagar
+            os dados controlados pelo aplicativo.
+          </p>
+          <p>
+            Desinstalar o aplicativo ou limpar seus dados remove o conteúdo privado do app. Cópias que já tenham
+            sido disponibilizadas na galeria podem permanecer até serem apagadas pelo usuário. Como não há servidor
+            próprio, o desenvolvedor não consegue acessar, recuperar ou excluir remotamente esses dados.
+          </p>
+        </section>
+
+        <section id="seguranca">
+          <h2>8. Segurança e compartilhamento</h2>
+          <p>
+            O desenvolvedor não vende nem compartilha comercialmente os dados cadastrados no aplicativo.
+            A interação com câmera, galeria, navegador, seletor de documentos e notificações utiliza recursos
+            fornecidos pelo Android e depende das escolhas do usuário.
+          </p>
+          <p>
+            O armazenamento local reduz a exposição decorrente de transmissões externas, mas não elimina riscos
+            relacionados a perda, defeito, roubo ou acesso não autorizado ao aparelho. Recomenda-se manter o dispositivo
+            protegido e preservar cópias dos arquivos importantes.
+          </p>
+        </section>
+
+        <section id="independencia">
+          <h2>9. Independência institucional e estimativas</h2>
+          <div class="notice">
+            O <strong>Agenda Salário: Plantão e DEAC</strong> é um aplicativo independente e não oficial.
+            Não possui vínculo, autorização, representação ou afiliação com a Prefeitura de São Paulo,
+            a Guarda Civil Metropolitana ou qualquer outro órgão público.
+          </div>
+          <p>
+            Referências a cargos, escalas, regras e fontes governamentais têm finalidade exclusivamente informativa.
+            Informações oficiais devem ser confirmadas com a unidade responsável ou com a área de Recursos Humanos.
+          </p>
+          <div class="warning">
+            ATENÇÃO: AS CALCULADORAS EXIBEM MERAS ESTIMATIVAS DE VALORES A SEREM PAGOS E/OU DESCONTADOS
+            E NÃO SUBSTITUEM O CÁLCULO OFICIAL DA DIVISÃO DE RECURSOS HUMANOS DA PREFEITURA.
+          </div>
+        </section>
+
+        <section id="publico">
+          <h2>10. Público-alvo</h2>
+          <p>
+            O aplicativo é uma ferramenta profissional destinada a adultos, especialmente servidores que desejam
+            organizar seus serviços. Ele não foi desenvolvido nem direcionado especificamente a crianças.
+          </p>
+        </section>
+
+        <section id="alteracoes">
+          <h2>11. Alterações desta política</h2>
+          <p>
+            Esta política poderá ser atualizada para refletir mudanças no aplicativo, requisitos legais ou políticas
+            das plataformas de distribuição. Quando houver alteração, a data indicada no início desta página será atualizada.
+          </p>
+        </section>
+
+        <section id="contato">
+          <h2>12. Contato</h2>
+          <div class="contact">
+            <p><strong>Responsável pelo aplicativo:</strong> Rapose Developer</p>
+            <p><strong>E-mail:</strong> <a href="mailto:raposedeveloper@gmail.com">raposedeveloper@gmail.com</a></p>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    © 2026 Rapose Developer · Agenda Salário: Plantão e DEAC
+  </footer>
+</body>
+</html>
